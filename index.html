@@ -128,6 +128,41 @@ if (pass1.toLowerCase()!="password" & testV ==3)
 var GRB = 1000;
 Q2();
 } 
+  function Q2() {
 
+var testV = 1;
+
+var pass1 = prompt('Please Enter Your Answer',' ');
+
+while (testV < 3) {
+
+if (!pass1) 
+
+history.go(-1);
+
+if (pass1.toLowerCase() == "one") {
+
+alert('You are correct.');
+
+
+break;
+
+} 
+
+testV+=1;
+
+var pass1 = 
+
+prompt('Incorrect answer please try again.',' ');
+
+}
+
+if (pass1.toLowerCase()!="password" & testV ==3) 
+
+history.go(-1);
+
+return " ";
+
+} 
 </script>
 </html>
