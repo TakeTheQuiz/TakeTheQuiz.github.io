@@ -1,79 +1,68 @@
 
+<script>
+  var GRB = 0;
+  var yes = 1;
+  
+if(yes<10){
+ passWord();
+  }
 function passWord() {
-
-
 
 var testV = 1;
 
-
-
-var pass1 = prompt('Please Enter Your Answer',' ');
-
-
+var pass1 = prompt('Do You Like Shoping anwser with yes or no.',' ');
 
 while (testV < 3) {
 
-
-
 if (!pass1) 
-
-
 
 history.go(-1);
 
-
-
-if (pass1.toLowerCase() == "one") {
-
-
-
+if (pass1.toLowerCase() == "yes") {
+var GRB = 1;
 alert('You are correct.');
-
-
-
-
-
+Q2();
 break;
 
-
-
 } 
-
-
 
 testV+=1;
 
-
-
 var pass1 = 
-
-
 
 prompt('Incorrect answer please try again.',' ');
 
-
-
+  
 }
-
-
 
 if (pass1.toLowerCase()!="password" & testV ==3) 
 
-
-
+var GRB = 1000;
+Q2();
+} 
+function Q2() {
+var testV = 1;
+var pass1 = prompt('Do you like action movies or drama movies. Anwser with action or drama.',' ');
+while (testV < 3) {
+if (!pass1) 
 history.go(-1);
-
-
-
-return " ";
-
-
-
+if (pass1.toLowerCase() == "action") {
+var GRB + 1;
+Q3();
+alert('You are correct.');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Incorrect answer please try again.',' ');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+var GRB + 100;
+Q3();
 } 
 
 
-
-</SCRIPT>
+</script>
 
 
 
