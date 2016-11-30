@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+function countWords(){
+	s = document.getElementById("inputString").value;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	document.getElementById("lettercount").value = s.split(' ').length;
+}
+</script>
+
+<textarea name="inputString" cols="50" rows="4">Text to count</textarea>
+<br>
+<input type="button" name="Convert" value="Count Words" onClick="countWords();"> 
+<input name="wordcount" type="text" value="" size="6">
+
+</body>
+</html>
