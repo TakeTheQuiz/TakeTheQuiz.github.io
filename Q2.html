@@ -97,9 +97,18 @@ h1{
     
   </body>
   <script>
-   
+      var GOB = 0;
+localStorage.setItem("GOB", GOB);
   function Q1P1(){
+    var GOB = localStorage.getItem("GOB");
+    var number = 100;
     
+    var GOB1 = GOB + number;
+    localStorage.setItem("GOB1", GOB);
+   
   }
+    function Q1P2(){
+      var GOB = localStorage.getItem("GOB");
+    }
   </script>
 </html>
