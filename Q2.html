@@ -75,7 +75,7 @@ h1{
   </style>
   <body>
     <h1>Take The Quiz</h1>
-    <h6>Only push on button in each section!</h6>
+    <h6>Only push on a button in each section!</h6>
     
     <p>_________________________________________________________________________________________________________</p>
     
@@ -105,6 +105,24 @@ h1{
     
     <button onclick="Q3P1()">Yes</button>
     <button onclick="Q3P2()">No</button>
+    
+    <p>_________________________________________________________________________________________________________</p>
+    
+    <p>If you made a movie would the protagonist live or die?</p>
+    
+    <button onclick="Q4P1()">Live</button>   
+    <button onclick="Q4P2()">Die</button>
+    
+    <p>________________________________________________________________________________________________________</p>
+    
+    <p>Do you use conditioner?</p>
+    
+    <button onclick="Q5P1()">Yes</button>       
+    <button onclick="Q5P2()">No</button>
+    
+    <p>_________________________________________________________________________________________________________</p>
+    
+    <button onClick="A()">Click Here To See Results!</button>
     
   </body>
   <script>
@@ -150,6 +168,43 @@ localStorage.setItem("GOB", GOB);
       var GOB3 = GOB2 + number;
       localStorage.setItem("GOB3", GOB3);
     }
+    
+    function Q4P1(){
+     var GOB3 = localStorage.getItem("GOB3");
+     var number = 100;
+     var GOB4 = GOB3 + number;
+     localStorage.setItem("GOB4", GOB4);
+    }
+    function Q4P2(){
+     var GOB3 = localStorage.getItem("GOB3");
+     var number = 1;
+     var GOB4 = GOB3 + number;
+      localStorage.setItem("GOB4", GOB4);
+    }
+    
+    function Q5P1(){
+      var GOB4 = localStorage.getItem("GOB4");
+      var number = 100;
+      var GOB5 = GOB4 + number;
+      localStorage.setItem("GOB5", GOB5);
+    }
+    function Q5P2(){
+     var GOB4 = localStorage.getItem("GOB4");
+      var number = 1;
+      var GOB5 = GOB4 + number;
+      localStorage.setItem("GOB5", GOB5);
+    }
+    function A(){
+     var GOB5 = localStorage.getItem("GOB5");
+      if(GOB5<247){
+       alert('You are a boy.'); 
+      }
+      if(GOB5>247){
+        alert('You are a girl.');
+      }
+      
+    }
+    
     
   </script>
 </html>
