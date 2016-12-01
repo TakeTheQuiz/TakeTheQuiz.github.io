@@ -47,17 +47,6 @@ a:link, a:visited {
 }
 
 
- 
-
-
-
-
-  
-
-
-
-
-
 a:hover, a:active {
 
 
@@ -91,20 +80,31 @@ h1{
     <p>_________________________________________________________________________________________________________</p>
     
     
-    <p>Do You Like Shoping</p>
+    <p>Do You Like Shoping?</p>
     
    <button onclick="Q1P1()">YES</button>
     <button onclick="Q1P2()">NO</button>
     
     <p>____________________________________________________________________________________________________________</p>
     
-    <p>Do you like action movies or drama movies.</p>
+    <p>Do you like action movies or drama movies?</p>
     
     <button onclick="Q2P1()">action</button>
     <button onclick="Q2P2()">drama</button>
     
     <p>___________________________________________________________________________________________________________</p>
     
+    <p>What is the color of your eyes?</p>
+    
+    <button onclick="#">blue</button>
+    <button onclick="#">brown</button>
+    
+    <p>_________________________________________________________________________________________________________</p>
+    
+    <p>Do you think farts are funny?</p>
+    
+    <button onclick="Q3P1()">Yes</button>
+    <button onclick="Q3P2()">No</button>
     
   </body>
   <script>
@@ -133,8 +133,22 @@ localStorage.setItem("GOB", GOB);
     function Q2P2(){
       var GOB1 = localStorage.getItem("GOB1");
       var number = 100;
-      var GOB2 - GOB1 + number;
+      var GOB2 = GOB1 + number;
       localStorage.setItem("GOB2", GOB2);
+    }
+    
+    function Q3P1(){
+     var GOB2 = localStorage.getItem("GOB2");
+     var number = 1;
+     var GOB3 = GOB2 + number;
+     localStorage.setItem("GOB3", GOB3);
+    }
+    
+    function Q3P2(){
+     var GOB2 = localStorage.getItem("GOB2");
+      var number = 100;
+      var GOB3 = GOB2 + number;
+      localStorage.setItem("GOB3", GOB3);
     }
     
   </script>
