@@ -51,6 +51,7 @@ a:link, a:visited {
 
 
 
+
   
 
 
@@ -102,6 +103,9 @@ h1{
     <button onclick="Q2P1()">action</button>
     <button onclick="Q2P2()">drama</button>
     
+    <p>___________________________________________________________________________________________________________</p>
+    
+    
   </body>
   <script>
       var GOB = 0;
@@ -124,6 +128,12 @@ localStorage.setItem("GOB", GOB);
       var GOB1 = localStorage.getItem("GOB1");
       var number = 1;
       var GOB2 = GOB1 + number;
+      localStorage.setItem("GOB2", GOB2);
+    }
+    function Q2P2(){
+      var GOB1 = localStorage.getItem("GOB1");
+      var number = 100;
+      var GOB2 - GOB1 + number;
       localStorage.setItem("GOB2", GOB2);
     }
     
