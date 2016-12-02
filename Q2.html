@@ -54,6 +54,10 @@ a:hover, a:active {
     background-color: blue;
 
 }
+  h5{
+   color: black;
+   font-size: 1px;
+  }
 h6{
 color: red;
 font-size: 30px;
@@ -81,6 +85,8 @@ h1{
     
     
     <p>Do You Like Shoping?</p>
+    
+    <h5 id="clicked1">Clicked</h5>
     
    <button onclick="Q1P1()">YES</button>
     <button onclick="Q1P2()">NO</button>
@@ -133,13 +139,20 @@ localStorage.setItem("GOB", GOB);
     var number = 100;
     var GOB1 = GOB + number;
     localStorage.setItem("GOB1", GOB1);
+    var x = docment.getElementById("clicked1");
+    x.style.fontSize = "30px";
+    x.style.color = "red";
    
   }
     function Q1P2(){
       var GOB = localStorage.getItem("GOB");
       var number = 1;
       var GOB1 = GOB + number;
-      localStorage.setItem("GOB1", GOB1);    }
+      localStorage.setItem("GOB1", GOB1); 
+      var x = docment.getElementById("clicked1");    
+      x.style.fontSize = "30px";    
+      x.style.color = "red";
+    }
     
     function Q2P1(){
       var GOB1 = localStorage.getItem("GOB1");
